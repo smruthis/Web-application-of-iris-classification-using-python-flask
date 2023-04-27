@@ -1,0 +1,31 @@
+<html>
+    <head>  IRIS CLASSIFICATION 
+    <link rel="stylesheet" href="/static/css/style.css">
+    </head><br>
+    <br>
+
+    <body background="/static/images/background1.jpg">
+
+        <form action='/predict' method="POST">
+
+            Sepal Length: <input type='text' name='sepal_length'><br>
+            <br>
+
+            Sepal Width: <input type='text' name='sepal_width'><br>
+            <br>
+
+            Petal Length: <input type='text' name='petal_length'><br>
+            <br>
+
+            Petal Width: <input type='text' name='petal_width'><br>
+            <br>
+
+            Class: {{result}} <br>
+
+            <input type='submit' value='Predict'>
+
+        </form>
+
+    </body>
+
+</html>
